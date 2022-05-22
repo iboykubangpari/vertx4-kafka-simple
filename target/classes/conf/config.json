@@ -1,0 +1,20 @@
+{
+	"consumer.mode": true,
+	"producer.mode": false,
+	"evb.kafka.consumer": "EVB_KAFKA_CONSUMER",
+	"evb.kafka.producer": "EVB_KAFKA_PRODUCER",
+	"kafka.topic": "cekkafka",
+	"kafka_consumer": {
+		"bootstrap.servers": "127.0.0.1:9092",
+		"key.deserializer": "org.apache.kafka.common.serialization.StringDeserializer",
+		"value.deserializer": "org.apache.kafka.common.serialization.StringDeserializer",
+		"group.id": "asset-registrant"
+	},
+	"kafka_producer": {
+		"bootstrap.servers": "127.0.0.1:9092",
+		"key.serializer": "org.apache.kafka.common.serialization.StringSerializer",
+		"value.serializer": "org.apache.kafka.common.serialization.StringSerializer",
+		"group.id": "test"
+	},
+	"http.port": 2987
+}
